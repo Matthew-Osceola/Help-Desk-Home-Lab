@@ -8,7 +8,6 @@ Set up and configured a Windows Server 2022 virtual machine and Windows 11 Pro v
 - Windows 11 Pro
 - Windows Server 2022
 - Jira
-- Spiceworks
 - Active Directory Tools
 - Group Policy Management Tools
 - Action1
