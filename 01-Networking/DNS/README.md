@@ -84,17 +84,3 @@ Used `nslookup` to directly query the Domain Controller's DNS server and verify 
 Used `dcdiag` to validate Domain Controller connectivity and DNS functionality.
 
 ![DCDIAG](./screenshots/dns-dcdiag.png)
-
----
-
-## Troubleshooting
-
-### DNS Resolution Issue
-
-The Windows 11 client initially attempted to resolve `mattosceola.com` through the router's IPv6 DNS server, resulting in a `Non-existent domain` response.
-
-### Resolution
-
-Reviewed the client's DNS configuration and verified that the Domain Controller's IPv4 address was available as a DNS server.
-
-DNS resolution was subsequently validated by directly querying the Domain Controller's DNS server with `nslookup`.
