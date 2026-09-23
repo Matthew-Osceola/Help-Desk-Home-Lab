@@ -29,17 +29,11 @@ Created an IPv4 DHCP scope for the `10.0.2.0/24` network.
 
 ![DHCP Scope](./screenshots/dhcp-scope.png)
 
-### Scope Configuration
+### DHCP Scope Configuration
 
 Configured the DHCP scope with an appropriate address range and subnet mask for the virtual network.
 
 ![DHCP Scope Configuration](./screenshots/dhcp-scope-configuration.png)
-
-### DHCP Options
-
-Configured DHCP options to provide network configuration to DHCP clients, including the default gateway and DNS server.
-
-![DHCP Options](./screenshots/dhcp-options.png)
 
 ---
 
@@ -49,19 +43,13 @@ Configured DHCP options to provide network configuration to DHCP clients, includ
 
 Used `ipconfig /all` on the Windows 11 client to verify that the client received its network configuration from DHCP.
 
-![Client IP Configuration](./screenshots/dhcp-ipconfig.png)
+![Client IP Configuration](./screenshots/client-ipconfig.png)
 
 ### DHCP Lease
 
 Verified the active DHCP lease assigned to the Windows 11 client.
 
 ![DHCP Lease](./screenshots/dhcp-lease.png)
-
-### Connectivity Validation
-
-Verified that the Windows 11 client could communicate with the network after receiving its DHCP configuration.
-
-![Connectivity Test](./screenshots/dhcp-connectivity.png)
 
 ---
 
