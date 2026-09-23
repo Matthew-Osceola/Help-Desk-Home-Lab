@@ -29,16 +29,20 @@ The DHCP lease was also verified in the DHCP management console under **Address 
 
 Additional connectivity testing:
 
+```text
 ping 10.0.2.1  
 ping 10.0.2.10  
 nslookup mattosceola.com
+```
 
 ## Troubleshooting
 
 Tested DHCP functionality by renewing the client's lease:
 
+```text
 ipconfig /release  
-ipconfig /renew  
+ipconfig /renew
+```
 
 Confirmed that the Windows 11 client received the expected IPv4 address, subnet mask, gateway, and DNS server from the DHCP server.
 
