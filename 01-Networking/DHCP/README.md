@@ -1,61 +1,72 @@
-# DHCP Configuration
+# DHCP Configuration & Validation
 
 ## Overview
 
-Configured the Windows Server 2022 DHCP Server role to provide automatic IPv4 network configuration to Windows client machines in the home lab environment.
+Configured and validated DHCP on Windows Server 2022 within an Active Directory environment.
 
-## Configuration
+### Environment
 
-| Setting | Configuration |
-|---|---|
-| DHCP Server | `OK-DC-01` (Windows Server 2022) |
-| Client | Windows 11 VM |
-| Address Assignment | DHCP |
-| Scope | 10.0.2.0/24 |
-| Address Pool | 10.0.2.100 - 10.0.2.200 |
-| Default Gateway | 10.0.2.1 |
-| DNS Server | 10.0.2.10 |
-| Lease Duration | 8 days |
+* **Server:** Windows Server 2022
+* **Domain Controller:** `OK-DC-01`
+* **Domain:** `mattosceola.com`
+* **DHCP Server:** `10.0.2.10`
+* **Client:** Windows 11 VM
+* **Virtualization:** Oracle VirtualBox
 
-## Verification
+---
 
-The Windows 11 client was configured to obtain its IPv4 configuration automatically.
+## DHCP Configuration
 
-Verification was performed using:
+### DHCP Server Role
 
-ipconfig /all
+Installed and configured the DHCP Server role on the Windows Server 2022 Domain Controller.
 
-The DHCP lease was also verified in the DHCP management console under **Address Leases**.
-
-Additional connectivity testing:
-
-```text
-ping 10.0.2.1  
-ping 10.0.2.10  
-nslookup mattosceola.com
-```
-
-## Troubleshooting
-
-Tested DHCP functionality by renewing the client's lease:
-
-```text
-ipconfig /release  
-ipconfig /renew
-```
-
-Confirmed that the Windows 11 client received the expected IPv4 address, subnet mask, gateway, and DNS server from the DHCP server.
-
-## Evidence
+![DHCP Server Role](./screenshots/dhcp-server-role.png)
 
 ### DHCP Scope
 
+Created an IPv4 DHCP scope for the `10.0.2.0/24` network.
+
 ![DHCP Scope](./screenshots/dhcp-scope.png)
 
-### DHCP Address Lease
+### Scope Configuration
 
-![DHCP Address Lease](./screenshots/dhcp-lease.png)
+Configured the DHCP scope with an appropriate address range and subnet mask for the virtual network.
+
+![DHCP Scope Configuration](./screenshots/dhcp-scope-configuration.png)
+
+### DHCP Options
+
+Configured DHCP options to provide network configuration to DHCP clients, including the default gateway and DNS server.
+
+![DHCP Options](./screenshots/dhcp-options.png)
+
+---
+
+## DHCP Validation
 
 ### Client IP Configuration
 
-![Client IP Configuration](./screenshots/client-ipconfig.png)
+Used `ipconfig /all` on the Windows 11 client to verify that the client received its network configuration from DHCP.
+
+![Client IP Configuration](./screenshots/dhcp-ipconfig.png)
+
+### DHCP Lease
+
+Verified the active DHCP lease assigned to the Windows 11 client.
+
+![DHCP Lease](./screenshots/dhcp-lease.png)
+
+### Connectivity Validation
+
+Verified that the Windows 11 client could communicate with the network after receiving its DHCP configuration.
+
+![Connectivity Test](./screenshots/dhcp-connectivity.png)
+
+---
+
+## DHCP Verification
+
+Verified that the DHCP server successfully assigned an IP address and network configuration to the Windows 11 client.
+
+The client received its network configuration from the Windows Server 2022 DHCP service, confirming successful DHCP operation.
