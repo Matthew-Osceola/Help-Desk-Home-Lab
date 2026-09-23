@@ -31,7 +31,7 @@ Configured DNS to resolve the Active Directory domain:
 
 Created an IPv4 reverse lookup zone for the `10.0.2.0/24` network.
 
-![Reverse Lookup Zone](dns-reverse-zone.png)
+![Reverse Lookup Zone](./screenshots/dns-reverse-zone.png)
 
 ### PTR Record
 
