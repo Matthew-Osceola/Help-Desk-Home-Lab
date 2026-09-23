@@ -53,6 +53,10 @@ Used `ipconfig /all` to verify the Domain Controller's network and DNS configura
 
 Used `nslookup` to directly query the Domain Controller's DNS server and verify forward resolution of `mattosceola.com`.
 
+```text
+mattosceola.com → 10.0.2.10
+```
+
 ![NSLOOKUP](./screenshots/dns-nslookup.png)
 
 ### Active Directory SRV Record
@@ -67,7 +71,7 @@ _ldap._tcp.dc._msdcs.mattosceola.com
 
 ### Reverse DNS Resolution
 
-Used `nslookup` to verify that the Domain Controller's IP address resolves back to its hostname.
+Used `nslookup` to directly query the Domain Controller's DNS server and verify reverse DNS resolution of `10.0.2.10`.
 
 ```text
 10.0.2.10 → OK-DC-01.mattosceola.com
@@ -80,18 +84,6 @@ Used `nslookup` to verify that the Domain Controller's IP address resolves back 
 Used `dcdiag` to validate Domain Controller connectivity and DNS functionality.
 
 ![DCDIAG](./screenshots/dns-dcdiag.png)
-
----
-
-## Client Validation
-
-Verified DNS resolution from the Windows 11 client by querying the Domain Controller's DNS server.
-
-The client successfully resolved:
-
-```text
-mattosceola.com → 10.0.2.10
-```
 
 ---
 
