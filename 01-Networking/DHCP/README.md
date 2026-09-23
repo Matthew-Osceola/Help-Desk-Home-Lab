@@ -50,8 +50,12 @@ Confirmed that the Windows 11 client received the expected IPv4 address, subnet 
 
 ### DHCP Scope
 
+![DHCP Scope](./screenshots/dhcp-scope.png)
 
 ### DHCP Address Lease
 
+![DHCP Address Lease](./screenshots/dhcp-lease.png)
 
 ### Client IP Configuration
+
+![Client IP Configuration](./screenshots/client-ipconfig.png)
