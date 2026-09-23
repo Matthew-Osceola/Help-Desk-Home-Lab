@@ -47,13 +47,13 @@ Created a PTR record to map the Domain Controller's IP address to its hostname:
 
 Used `ipconfig /all` to verify the Domain Controller's network and DNS configuration.
 
-![IP Configuration](dns-ipconfig.png)
+![IP Configuration](./screenshots/dns-ipconfig.png)
 
 ### DNS Name Resolution
 
 Used `nslookup` to directly query the Domain Controller's DNS server and verify forward resolution of `mattosceola.com`.
 
-![NSLOOKUP](dns-nslookup.png)
+![NSLOOKUP](./screenshots/dns-nslookup.png)
 
 ### Active Directory SRV Record
 
@@ -63,7 +63,7 @@ Verified the Active Directory LDAP SRV record used for Domain Controller discove
 _ldap._tcp.dc._msdcs.mattosceola.com
 ```
 
-![DNS SRV Lookup](dns-srv-lookup.png)
+![DNS SRV Lookup](./screenshots/dns-srv-lookup.png)
 
 ### Reverse DNS Resolution
 
@@ -73,13 +73,13 @@ Used `nslookup` to verify that the Domain Controller's IP address resolves back 
 10.0.2.10 → OK-DC-01.mattosceola.com
 ```
 
-![Reverse DNS Lookup](dns-reverse-nslookup.png)
+![Reverse DNS Lookup](./screenshots/dns-reverse-nslookup.png)
 
 ### DCDIAG
 
 Used `dcdiag` to validate Domain Controller connectivity and DNS functionality.
 
-![DCDIAG](dns-dcdiag.png)
+![DCDIAG](./screenshots/dns-dcdiag.png)
 
 ---
 
