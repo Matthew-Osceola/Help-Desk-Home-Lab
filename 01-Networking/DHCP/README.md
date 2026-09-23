@@ -49,4 +49,4 @@ Verified the active DHCP lease assigned to the Windows 11 client.
 
 Used `ipconfig /all` on the Windows 11 client to verify that the client received its network configuration from DHCP.
 
-![Client IP Configuration](./screenshots/client-ipconfig.png)
+![Client IP Configuration](./screenshots/dhcp-ipconfig.png)
