@@ -1,1 +1,108 @@
+# DNS Configuration & Validation
 
+## Overview
+
+Configured and validated DNS on Windows Server 2022 within an Active Directory environment.
+
+### Environment
+
+* **Server:** Windows Server 2022
+* **Domain Controller:** `OK-DC-01`
+* **Domain:** `mattosceola.com`
+* **DNS Server:** `10.0.2.10`
+* **Client:** Windows 11 VM
+* **Virtualization:** Oracle VirtualBox
+
+---
+
+## DNS Configuration
+
+### DNS Manager
+
+Used DNS Manager to configure and verify DNS zones and records on the Domain Controller.
+
+### Forward DNS Resolution
+
+Configured DNS to resolve the Active Directory domain:
+
+`mattosceola.com`
+
+### Reverse Lookup Zone
+
+Created an IPv4 reverse lookup zone for the `10.0.2.0/24` network.
+
+![Reverse Lookup Zone](dns-reverse-zone.png)
+
+### PTR Record
+
+Created a PTR record to map the Domain Controller's IP address to its hostname:
+
+`10.0.2.10` → `OK-DC-01.mattosceola.com`
+
+---
+
+## DNS Validation
+
+### IP Configuration
+
+Used `ipconfig /all` to verify the Domain Controller's network and DNS configuration.
+
+![IP Configuration](dns-ipconfig.png)
+
+### DNS Name Resolution
+
+Used `nslookup` to directly query the Domain Controller's DNS server and verify forward resolution of `mattosceola.com`.
+
+![NSLOOKUP](dns-nslookup.png)
+
+### Active Directory SRV Record
+
+Verified the Active Directory LDAP SRV record used for Domain Controller discovery.
+
+```text
+_ldap._tcp.dc._msdcs.mattosceola.com
+```
+
+![DNS SRV Lookup](dns-srv-lookup.png)
+
+### Reverse DNS Resolution
+
+Used `nslookup` to verify that the Domain Controller's IP address resolves back to its hostname.
+
+```text
+10.0.2.10 → OK-DC-01.mattosceola.com
+```
+
+![Reverse DNS Lookup](dns-reverse-nslookup.png)
+
+### DCDIAG
+
+Used `dcdiag` to validate Domain Controller connectivity and DNS functionality.
+
+![DCDIAG](dns-dcdiag.png)
+
+---
+
+## Client Validation
+
+Verified DNS resolution from the Windows 11 client by querying the Domain Controller's DNS server.
+
+The client successfully resolved:
+
+```text
+mattosceola.com → 10.0.2.10
+```
+
+---
+
+## Troubleshooting
+
+### DNS Resolution Issue
+
+The Windows 11 client initially attempted to resolve `mattosceola.com` through the router's IPv6 DNS server, resulting in a `Non-existent domain` response.
+
+### Resolution
+
+Reviewed the client's DNS configuration and verified that the Domain Controller's IPv4 address was available as a DNS server.
+
+DNS resolution was subsequently validated by directly querying the Domain Controller's DNS server with `nslookup`.
