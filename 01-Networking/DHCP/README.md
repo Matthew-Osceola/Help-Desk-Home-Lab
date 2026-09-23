@@ -39,22 +39,14 @@ Configured the DHCP scope with an appropriate address range and subnet mask for 
 
 ## DHCP Validation
 
+### DHCP Lease
+
+Verified the active DHCP lease assigned to the Windows 11 client.
+
+![Active DHCP Lease](./screenshots/dhcp-lease.png)
+
 ### Client IP Configuration
 
 Used `ipconfig /all` on the Windows 11 client to verify that the client received its network configuration from DHCP.
 
 ![Client IP Configuration](./screenshots/client-ipconfig.png)
-
-### DHCP Lease
-
-Verified the active DHCP lease assigned to the Windows 11 client.
-
-![DHCP Lease](./screenshots/dhcp-lease.png)
-
----
-
-## DHCP Verification
-
-Verified that the DHCP server successfully assigned an IP address and network configuration to the Windows 11 client.
-
-The client received its network configuration from the Windows Server 2022 DHCP service, confirming successful DHCP operation.
