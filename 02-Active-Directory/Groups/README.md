@@ -4,7 +4,7 @@
 
 Created and configured Active Directory security groups to organize users and manage access to departmental resources.
 
-### Environment
+## Environment
 
 * **Hypervisor:** Oracle VirtualBox
 * **Server:** Windows Server 2022
