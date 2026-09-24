@@ -11,7 +11,7 @@ Configured and validated DHCP on Windows Server 2022 within an Active Directory 
 * **Domain:** `mattosceola.com`
 * **DHCP Server:** `10.0.2.10`
 * **Client:** Windows 11 VM
-* **Virtualization:** Oracle VirtualBox
+* **Hypervisor:** Oracle VirtualBox
 
 ---
 
