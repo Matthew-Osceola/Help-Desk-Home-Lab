@@ -23,7 +23,7 @@ Configured a VirtualBox NAT Network to allow Windows Server 2022 and a Windows 1
 
 Created a VirtualBox NAT Network to provide an isolated virtual network with internet access for both virtual machines.
 
-**Screenshot:** `images/nat-network-settings.png`
+![Internet Connectivity](./screenshots/nat-network-settings.png)
 
 ---
 
@@ -34,7 +34,7 @@ Configured both virtual machines to use the same NAT Network.
 * Windows Server 2022
 * Windows 11 Client
 
-**Screenshot:** `images/vm-network-adapter.png`
+![Internet Connectivity](./screenshots/nat-vm-network-adapter.png)
 
 ---
 
@@ -48,7 +48,7 @@ Expected values:
 * Subnet Mask: `255.255.255.0`
 * Default Gateway: `10.0.2.1`
 
-**Screenshot:** `images/server-ipconfig.png`
+![Internet Connectivity](./screenshots/nat-server-ipconfig.png)
 
 ---
 
@@ -65,8 +65,7 @@ Validation included:
 * DNS configured
 * Successful communication with the domain controller
 
-![Internet Connectivity](./screenshots/nat-ipconfig)
-**Screenshot:** `images/client-ipconfig.png`
+![Internet Connectivity](./screenshots/nat-client-ipconfig.png)
 
 ---
 
@@ -80,5 +79,4 @@ Validation examples:
 * Successful ping tests
 * Windows Update connectivity
 
-![Internet Connectivity](./screenshots/nat-connectivity)
-**Screenshot:** `images/internet-connectivity.png`
+![Internet Connectivity](./screenshots/nat-connectivity.png)
