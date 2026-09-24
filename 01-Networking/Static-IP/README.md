@@ -49,10 +49,26 @@ The Domain Controller now uses a persistent static IPv4 address, ensuring reliab
 
 ## Screenshots
 
-| Step                            | Screenshot               |
-| ------------------------------- | ------------------------ |
-| IPv4 configuration              | [IPv4 configuration](./screenshots/static-ipv4-configuration.png) |
-| `ipconfig /all` verification    | [IPv4 configuration](./screenshots/static-ipconfig-all.png)       |
-| Successful ping to `10.0.2.10`  | [IPv4 configuration](./screenshots/static-ping-dns-server.png)    |
-| Successful ping to `google.com` | [IPv4 configuration](./screenshots/static-ping-google.png)        |
+### Static IPv4 Configuration
 
+Configured the Windows Server network adapter with a static IPv4 address, subnet mask, default gateway, and preferred DNS server.
+
+![Static IPv4 Configuration](./screenshots/static-ipv4-configuration.png)
+
+### IP Configuration Validation
+
+Verified the static network configuration using `ipconfig /all`.
+
+![IP Configuration Validation](./screenshots/static-ipconfig-all.png)
+
+### DNS Server Connectivity
+
+Verified connectivity to the configured DNS server using `ping 10.0.2.10`.
+
+![DNS Server Ping](./screenshots/static-ping-dns-server.png)
+
+### Internet Connectivity
+
+Verified external network connectivity using `ping google.com`.
+
+![Internet Connectivity](./screenshots/static-ping-google.png)
