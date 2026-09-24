@@ -1,4 +1,4 @@
-# Domain Controller Setup
+# Domain Controller Configuration and Validation
 
 ## Overview
 
