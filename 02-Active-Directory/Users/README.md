@@ -1,4 +1,4 @@
-# Active Directory Users Configuration and Validation
+# Active Directory Users Configuration & Validation
 
 ## Overview
 
