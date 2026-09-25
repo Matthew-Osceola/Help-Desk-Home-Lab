@@ -12,14 +12,6 @@ Created and organized Organizational Units (OUs) in Active Directory to separate
 - **Domain:** `mattosceola.com`
 - **Client:** Windows 11 VM
 
-
-## Objectives
-
-- Create a structured OU hierarchy.
-- Separate administrative objects from lab-created objects.
-- Organize users and security groups by department.
-- Prepare the domain for targeted Group Policy Objects (GPOs).
-
 ## Configuration
 
 ### 1. Created the Primary Organizational Units
@@ -52,13 +44,7 @@ Created a dedicated Users OU and separate departmental user OUs to isolate lab-c
 
 Created a dedicated Groups OU to organize department security groups separately from default Active Directory groups.
 
-![Groups Organizational Units](./screenshots/groups-ous.png)
-
-### 5. Moved Lab Objects into the New Structure
-
-Moved users and security groups into their appropriate Organizational Units while preserving Active Directory functionality.
-
-![New Structure](./screenshots/new-structure.png)
+![Security Group Organizational Units](./screenshots/security-group-ous.png)
 
 ## Validation
 
@@ -70,4 +56,4 @@ Verified that:
 - Built-in Active Directory objects remain separate from lab-created objects.
 - The OU structure is ready for Group Policy deployment.
 
-![Primary Organizational Units](./screenshots/fnal-structure.png)
+![Primary Organizational Units](./screenshots/final-structure.png)
