@@ -33,8 +33,8 @@ Example structure:
 
 ```text
 mattosceola.com
-├── Users
-│   ├── Department Users
+├── Department Users
+│   ├── Finance
 │   └── ...
 └── Groups
     └── Department Groups
