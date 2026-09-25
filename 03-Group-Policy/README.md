@@ -8,9 +8,9 @@ The policies were linked to Organizational Units (OUs), tested on domain-joined 
 
 ## Projects
 
-| Project | Description |
-|---------|-------------|
-| **Mapped Network Drives** | Automatically mapped department shared folders using Group Policy Preferences and user targeting. |
-| **Password & Account Lockout** | Configured domain password complexity, expiration, and account lockout policies. |
-| **Screen & Inactivity** | Enforced screen saver lock and inactivity timeout for users. |
-| **Windows Firewall** | Created and linked a firewall policy to demonstrate centralized computer policy management. |
+| Project                                                        | Description                                                                                       |
+|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **[Mapped Network Drives](./Mapped-Network-Drives)**           | Automatically mapped department shared folders using Group Policy Preferences and user targeting. |
+| **[Password & Account Lockout](./Password-&-Account-Lockout)** | Configured domain password complexity, expiration, and account lockout policies.                  |
+| **[Screen Lock & Inactivity](./Screen-Lock-&-Inactivity)**     | Enforced screen saver lock and inactivity timeout for users.                                      |
+| **[Windows Firewall](./Windows-Firewall)**                     | Created and linked a firewall policy to demonstrate centralized computer policy management.       |
