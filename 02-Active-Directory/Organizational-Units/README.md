@@ -6,11 +6,11 @@ Created and organized Organizational Units (OUs) in Active Directory to separate
 
 ## Environment
 
-- **Hypervisor:** Oracle VirtualBox
-- **Server:** Windows Server 2022
-- **Domain Controller:** `OK-DC-01`
-- **Domain:** `mattosceola.com`
-- **Client:** Windows 11 VM
+* **Hypervisor:** Oracle VirtualBox
+* **Server:** Windows Server 2022
+* **Domain Controller:** `OK-DC-01`
+* **Domain:** `mattosceola.com`
+* **Client:** Windows 11 VM
 
 ## Configuration
 
