@@ -10,7 +10,7 @@ Configured Group Policy to automatically map department and personal network dri
 * **Server:** Windows Server 2022
 * **Domain Controller:** `OK-DC-01`
 * **Domain:** `mattosceola.com`
-* **Client:** Windows 11 Pro
+* **Client:** Windows 11 Pro VM
 
 
 ## Configuration
