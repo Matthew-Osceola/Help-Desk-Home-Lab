@@ -69,4 +69,4 @@ Confirmed that:
 
 ### Group Policy Applied (`gpresult`)
 
-![Drive Maps Policy Configuration](./screenshots/gp-applied.png)
+![Drive Maps Policy Configuration](./screenshots/gpo-applied.png)
