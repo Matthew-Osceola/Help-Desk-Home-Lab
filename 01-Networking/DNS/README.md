@@ -6,12 +6,13 @@ Configured and validated DNS on Windows Server 2022 within an Active Directory e
 
 ### Environment
 
+* **Hypervisor:** Oracle VirtualBox
 * **Server:** Windows Server 2022
 * **Domain Controller:** `OK-DC-01`
 * **Domain:** `mattosceola.com`
 * **DNS Server:** `10.0.2.10`
 * **Client:** Windows 11 VM
-* **Hypervisor:** Oracle VirtualBox
+
 
 ---
 
