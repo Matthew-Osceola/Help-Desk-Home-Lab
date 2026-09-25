@@ -13,7 +13,6 @@ The policies are designed to strengthen account security by enforcing password r
 * **Domain Controller:** `OK-DC-01`
 * **Domain:** `mattosceola.com`
 * **Client:** Windows 11 Pro VM
-* **Directory Service:** Active Directory Domain Services (AD DS)
 
 ## Configuration
 
