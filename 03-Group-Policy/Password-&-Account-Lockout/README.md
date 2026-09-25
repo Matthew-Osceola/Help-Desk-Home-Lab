@@ -8,10 +8,12 @@ The policies are designed to strengthen account security by enforcing password r
 
 ## Environment
 
-* Windows Server 2022
-* Active Directory Domain Services
-* Group Policy
-* Windows 11 Pro client
+* **Hypervisor:** Oracle VirtualBox
+* **Server:** Windows Server 2022
+* **Domain Controller:** `OK-DC-01`
+* **Domain:** `mattosceola.com`
+* **Client:** Windows 11 Pro VM
+* **Directory Service:** Active Directory Domain Services (AD DS)
 
 ## Configuration
 
