@@ -1,4 +1,4 @@
-# Active Directory Groups Configuration and Validation
+# Active Directory Groups Configuration & Validation
 
 ## Overview
 
