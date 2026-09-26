@@ -11,6 +11,7 @@ Created and configured Active Directory security groups to organize users and ma
 * **Domain Controller:** `OK-DC-01`
 * **Domain:** `mattosceola.com`
 * **Client:** Windows 11 VM
+* **Directory Service:** Active Directory Domain Services (AD DS)
 
 ## Configuration
 
