@@ -57,20 +57,20 @@ Verified the NTFS permission configuration by:
 
 ### Department Folder Security
 
-![Department Folder Security](department-folder-security.png)
+![Department Folder Security](./screenshots/department-folder-security.png)
 
 ### Personal Folder Security
 
-![Personal Folder Security](personal-folder-security.png)
+![Personal Folder Security](./screenshots/personal-folder-security.png)
 
 ### IT User Access
 
-![IT User Access](it-user-access.png)
+![IT User Access](./screenshots/it-user-access.png)
 
 ### Unauthorized Access Test
 
-![Unauthorized Access Test](unauthorized-access-test.png)
+![Unauthorized Access Test](./screenshots/unauthorized-access-test.png)
 
 ### Personal Folder Access
 
-![Personal Folder Access](personal-folder-access.png)
+![Personal Folder Access](./screenshots/personal-folder-access.png)
