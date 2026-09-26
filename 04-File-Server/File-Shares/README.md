@@ -59,7 +59,7 @@ User shares were configured to restrict access to the appropriate user account.
 
 ### Shared Folders
 
-![Share Permissionss](./screenshots/shared-folders.png)
+![Shared Folders](./screenshots/shared-folders.png)
 
 ### File Explorer Access
 
