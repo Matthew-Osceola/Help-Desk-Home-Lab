@@ -63,7 +63,7 @@ Verified the NTFS permission configuration by:
 
 ![Personal Folder Security](personal-folder-security.png)
 
-### Finance User Access
+### IT User Access
 
 ![Finance User Access](finance-user-access.png)
 
