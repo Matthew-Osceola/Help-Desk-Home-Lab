@@ -15,18 +15,13 @@ This project demonstrates how Group Policy was used to automatically enable a sc
 
 ## Configuration
 
-### Screen Saver Configuration
+### Screen Saver and Inactivity Configuration
 
-Configured a domain Group Policy to automatically enable a screen saver after a period of user inactivity.
+Configured a domain Group Policy to automatically enable a screen saver after a period of user inactivity and require users to authenticate when resuming from the screen saver.
 
 - Enabled the screen saver
 - Specified the screen saver executable
 - Configured the inactivity timeout
-
-### Password Protection
-
-Configured the policy to require users to authenticate when resuming from the screen saver.
-
 - Enabled password protection on resume
 - Applied the settings through Group Policy
 
@@ -47,13 +42,9 @@ Confirmed that the security settings were successfully applied to the Windows 11
 - A password was required to regain access.
 - `gpresult /r` confirmed that the GPO was applied.
 
-### Screen Saver Policy
+### Screen Saver and Inactivity Policy
 
-![Screen Saver Policy](./screenshots/screen-saver-policy.png)
-
-### Password Protection Policy
-
-![Password Protection Policy](./screenshots/password-protection-policy.png)
+![Screen Saver and Inactivity Policy](./screenshots/screen-saver-policy.png)
 
 ### Group Policy Results
 
