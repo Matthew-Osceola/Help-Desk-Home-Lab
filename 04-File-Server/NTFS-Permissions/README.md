@@ -65,7 +65,7 @@ Verified the NTFS permission configuration by:
 
 ### IT User Access
 
-![Finance User Access](finance-user-access.png)
+![IT User Access](it-user-access.png)
 
 ### Unauthorized Access Test
 
