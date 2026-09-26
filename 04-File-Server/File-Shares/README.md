@@ -45,9 +45,9 @@ User shares were configured to restrict access to the appropriate user account.
 ## Validation
 
 - Verified department shares were accessible from the Windows 11 client.
-- Confirmed users could access shares according to their assigned permissions.
+- Verified user shares were accessible from the Windows 11 client.
 - Tested access using domain user accounts.
-- Verified restricted folders could not be accessed by unauthorized users.
+- Showed that the shared folders are being shared from the domain controller
 
 ### Department Shares
 
@@ -64,4 +64,3 @@ User shares were configured to restrict access to the appropriate user account.
 ### File Explorer Access
 
 ![File Explorer Access](./screenshots/file-explorer-access.png)
-
