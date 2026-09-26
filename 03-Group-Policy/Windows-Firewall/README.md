@@ -58,4 +58,4 @@ Verified that the firewall policy was successfully applied to the Windows 11 cli
 
 ### Group Policy Results
 
-![Group Policy Results](./screenshots/gpresult-firewall.png)
+![Group Policy Results](./screenshots/gpresult.png)
