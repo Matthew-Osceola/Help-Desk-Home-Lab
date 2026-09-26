@@ -11,7 +11,7 @@ Configured and validated a Windows Server 2022 Domain Controller using Active Di
 * **Domain Controller:** `OK-DC-01`
 * **Domain:** `mattosceola.com`
 * **Server IP:** `10.0.2.10`
-
+* **Directory Service:** Active Directory Domain Services (AD DS)
 
 ## Configuration
 
