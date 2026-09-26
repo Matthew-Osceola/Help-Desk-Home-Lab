@@ -6,17 +6,18 @@ Configured Windows Firewall settings through Group Policy to create a consistent
 
 ## Environment
 
-- **Server:** Windows Server 2022 (Domain Controller)
-- **Client:** Windows 11 Pro
-- **Domain:** `mattosceola.com`
-- **Domain Controller:** `OK-DC-01`
-- **Management Tool:** Group Policy Management Console (GPMC)
+* **Hypervisor:** Oracle VirtualBox
+* **Server:** Windows Server 2022
+* **Domain Controller:** `OK-DC-01`
+* **Domain:** `mattosceola.com`
+* **Client:** Windows 11 Pro VM
+* **Management Tool:** Group Policy Management
 
 ## Configuration
 
 ### Firewall Group Policy
 
-Configured Windows Firewall settings in the **GPO-Workstation-Security** Group Policy Object.
+Configured Windows Firewall settings in the **GPO-Windows-Firewall** Group Policy Object.
 
 **Configured settings:**
 
@@ -32,11 +33,11 @@ Linked the GPO to the appropriate Organizational Unit so domain computers receiv
 
 Verified that the firewall policy was successfully applied to the Windows 11 client.
 
-Validation included:
+Validation includes:
 
-- Confirmed the workstation received **GPO-Workstation-Security**.
+- Verified the configuration of the **GPO-Windows-Firewall** GPO.
 - Verified Windows Defender Firewall was enabled.
-- Confirmed the Domain Profile was active on the domain-joined workstation.
+- Confirmed the workstation received **GPO-Windows-Firewall**.
 
 
 ### Firewall Group Policy
