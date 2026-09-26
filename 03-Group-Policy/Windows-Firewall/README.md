@@ -25,6 +25,16 @@ Configured Windows Firewall settings in the **GPO-Windows-Firewall** Group Polic
 - Managed firewall settings through Group Policy.
 - Applied the policy to domain-joined workstations.
 
+### Firewall Logging
+
+Configured Windows Defender Firewall logging for the Domain Profile to support troubleshooting and security monitoring.
+
+**Configured settings:**
+
+- Log dropped packets: Enabled
+- Log successful connections: Enabled
+- Log file: `%systemroot%\system32\logfiles\firewall\pfirewall.log`
+
 ### Policy Deployment
 
 Linked the GPO to the appropriate Organizational Unit so domain computers receive the firewall configuration automatically during Group Policy updates.
@@ -33,11 +43,12 @@ Linked the GPO to the appropriate Organizational Unit so domain computers receiv
 
 Verified that the firewall policy was successfully applied to the Windows 11 client.
 
-- Presented the configuration of the **GPO-Windows-Firewall** GPO.
-- Verified Windows Defender Firewall was enabled.
 - Confirmed the workstation received **GPO-Windows-Firewall**.
+- Verified Windows Defender Firewall was enabled for the Domain Profile.
+- Confirmed the Domain network profile was active.
+- Verified Domain Profile logging settings were configured.
 
-### Firewall Group Policy
+### Firewall with Logging Group Policy
 
 ![Firewall Group Policy](./screenshots/firewall-gpo.png)
 
