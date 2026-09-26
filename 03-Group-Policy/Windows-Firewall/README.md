@@ -33,12 +33,9 @@ Linked the GPO to the appropriate Organizational Unit so domain computers receiv
 
 Verified that the firewall policy was successfully applied to the Windows 11 client.
 
-Validation includes:
-
-- Verified the configuration of the **GPO-Windows-Firewall** GPO.
+- Presented the configuration of the **GPO-Windows-Firewall** GPO.
 - Verified Windows Defender Firewall was enabled.
 - Confirmed the workstation received **GPO-Windows-Firewall**.
-
 
 ### Firewall Group Policy
 
@@ -46,8 +43,8 @@ Validation includes:
 
 ### Firewall Enabled
 
-![### Firewall Enabled](./screenshots/firewall-enabled.png)
+![Firewall Enabled](./screenshots/firewall-enabled.png)
 
 ### Group Policy Results
 
-![### Group Policy Results](./screenshots/gpresult-firewall.png)
+![Group Policy Results](./screenshots/gpresult-firewall.png)
