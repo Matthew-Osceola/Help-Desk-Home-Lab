@@ -6,11 +6,12 @@ This project demonstrates how Group Policy was used to automatically enable a sc
 
 ## Environment
 
-- **Hypervisor:** Oracle VirtualBox
-- **Server:** Windows Server 2022 (`OK-DC-01`)
-- **Client:** Windows 11 Pro (`Desktop01`)
-- **Domain:** `mattosceola.com`
-- **Management Tool:** Group Policy Management
+* **Hypervisor:** Oracle VirtualBox
+* **Server:** Windows Server 2022
+* **Domain Controller:** `OK-DC-01`
+* **Domain:** `mattosceola.com`
+* **Client:** Windows 11 Pro VM
+* **Management Tool:** Group Policy Management
 
 ## Configuration
 
