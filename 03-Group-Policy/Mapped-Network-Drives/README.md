@@ -11,7 +11,7 @@ Configured Group Policy to automatically map department and personal network dri
 * **Domain Controller:** `OK-DC-01`
 * **Domain:** `mattosceola.com`
 * **Client:** Windows 11 Pro VM
-
+* **Management Tool:** Group Policy Management
 
 ## Configuration
 
