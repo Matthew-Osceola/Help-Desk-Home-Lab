@@ -48,7 +48,7 @@ Confirmed that the security settings were successfully applied to the Windows 11
 
 ### Group Policy Results
 
-![Group Policy Results](./screenshots/gp-results.png)
+![Group Policy Results](./screenshots/gp-result.png)
 
 ### Locked Workstation
 
