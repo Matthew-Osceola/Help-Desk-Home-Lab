@@ -10,5 +10,5 @@ The file server was organized using **security groups and the AGDLP model**, wit
 
 | Project                                        | Description                                                                                                               |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **[NTFS Permissions](./NTFS-Permissions)**     | Configured NTFS permissions using security groups and the AGDLP model to control access to department and user resources. |
 | **[File Shares](./File-Shares)**               | Created and configured department and user shared folders for centralized network resource access.                        |
+| **[NTFS Permissions](./NTFS-Permissions)**     | Configured NTFS permissions using security groups and the AGDLP model to control access to department and user resources. |
