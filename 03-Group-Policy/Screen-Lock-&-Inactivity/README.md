@@ -19,19 +19,19 @@ This project demonstrates how Group Policy was used to automatically enable a sc
 
 Configured a domain Group Policy to automatically enable a screen saver after a period of user inactivity and require users to authenticate when resuming from the screen saver.
 
-- Enabled the screen saver
-- Specified the screen saver executable
-- Configured the inactivity timeout
-- Enabled password protection on resume
-- Applied the settings through Group Policy
+- Enabled the screen saver.
+- Specified the screen saver executable.
+- Configured the inactivity timeout.
+- Enabled password protection on resume.
+- Applied the settings through Group Policy.
 
 ### Policy Deployment
 
 Linked the policy to the appropriate Organizational Unit and updated the client to apply the new configuration.
 
-- Linked the GPO
-- Updated Group Policy on the client
-- Verified policy application
+- Linked the GPO.
+- Updated Group Policy on the client.
+- Verified policy application.
 
 ## Validation
 
