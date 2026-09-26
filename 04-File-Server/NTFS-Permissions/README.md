@@ -1,4 +1,4 @@
-# NTFS Permissions
+# NTFS Permissions Configuration & Validation
 
 ## Overview
 
@@ -8,12 +8,11 @@ Permissions were assigned using **AGDLP (Accounts → Global Groups → Domain L
 
 ## Environment
 
-- **Server:** Windows Server 2022
-- **Domain:** `mattosceola.com`
-- **Domain Controller:** `OK-DC-01`
-- **File Server:** `OK-DC-01`
-- **Active Directory:** Users, Global Groups, Domain Local Groups
-- **Permission Model:** AGDLP
+* **Hypervisor:** Oracle VirtualBox
+* **Server:** Windows Server 2022
+* **Client:** Windows 11 Pro
+* **Domain:** `mattosceola.com`
+* **File Server:** `OK-DC-01`
 
 ## Configuration
 
@@ -58,20 +57,20 @@ Verified the NTFS permission configuration by:
 
 ### Department Folder Security
 
-*Department folder with Domain Local groups assigned to NTFS permissions.*
+![Department Folder Security](department-folder-security.png)
 
 ### Personal Folder Security
 
-*Personal user folder showing restricted NTFS permissions.*
+![Personal Folder Security](personal-folder-security.png)
 
 ### Finance User Access
 
-*Finance user successfully accessing the Finance folder.*
+![Finance User Access](finance-user-access.png)
 
 ### Unauthorized Access Test
 
-*User from another department receiving an Access Denied message.*
+![Unauthorized Access Test](unauthorized-access-test.png)
 
 ### Personal Folder Access
 
-*User successfully accessing their own personal folder while other users are restricted.*
+![Personal Folder Access](personal-folder-access.png)
