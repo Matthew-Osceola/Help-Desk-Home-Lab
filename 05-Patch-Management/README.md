@@ -45,7 +45,7 @@ Verified that the selected updates were successfully installed and confirmed the
 
 ### Patch Deployment
 
-![Patch Deployment](./screenshot/patch-deployment.png)
+![Patch Deployment](./screenshots/patch-deployment.png)
 
 ### Patch Verification
 
