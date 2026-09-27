@@ -8,10 +8,10 @@ The project demonstrates basic endpoint management, update deployment, and verif
 
 ## Environment
 
+* **Hypervisor:** Oracle VirtualBox
 * **Operating Systems:** Windows Server 2022 and Windows 11 Pro
 * **Patch Management:** Action1
-* **Virtualization:** Oracle VirtualBox
-* **Network:** Windows Server 2022 Active Directory environment
+* **Network:** Windows Server 2022 Domain Controller
 
 ## Configuration
 
@@ -37,16 +37,16 @@ Verified that the selected updates were successfully installed and confirmed the
 
 ### Endpoint Registration
 
-*Windows Server 2022 and Windows 11 Pro systems registered and visible in the Action1 console.*
+![Endpoint Registration](./screenshots/endpoint-registration.png)
 
 ### Available Updates
 
-*Action1 displaying available Windows updates for the managed systems.*
+![Available Updates](./screenshots/available-updates.png)
 
 ### Patch Deployment
 
-*Windows updates being deployed through Action1.*
+![Patch Deployment](./screenshot/patch-deployment.png)
 
 ### Patch Verification
 
-*Verified the updates were successfully installed and the endpoints reported updated patch status.*
+![Patch Verification](./screenshots/patch-verification.png)
