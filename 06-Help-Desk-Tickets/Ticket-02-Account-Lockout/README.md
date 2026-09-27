@@ -60,8 +60,6 @@ The user's Active Directory account was unlocked and the user was able to sign i
 * Updated the Jira ticket with the resolution.
 * Moved the Jira ticket to **Done**.
 
-## Screenshots
-
 ### Jira Ticket Overview
 
 *Created and tracked the account lockout request in Jira, including the issue key, request type, priority, status, and issue summary.*
