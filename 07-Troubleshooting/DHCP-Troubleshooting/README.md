@@ -8,19 +8,19 @@ The issue was resolved by verifying the DHCP server configuration, renewing the 
 
 ## Environment
 
-- Windows Server 2022 (OK-DC-01)
-- Windows 11 Pro (Desktop01)
-- Domain: mattosceola.com
-- Oracle VirtualBox NAT Network
-- DHCP Server: 10.0.2.10
-- Scope: 10.0.2.0/24
-- Address Pool: 10.0.2.100–10.0.2.200
+* Windows Server 2022 (OK-DC-01)
+* Windows 11 Pro (Desktop01)
+* Domain: mattosceola.com
+* Oracle VirtualBox NAT Network
+* DHCP Server: 10.0.2.10
+* Scope: 10.0.2.0/24
+* Address Pool: 10.0.2.100–10.0.2.200
 
 ## Symptoms
 
-- Windows 11 client did not receive the expected DHCP configuration.
-- Network connectivity required verification after renewing the DHCP lease.
-- Client IP assignment needed to be validated before testing domain connectivity.
+* Windows 11 client did not receive the expected DHCP configuration.
+* Network connectivity required verification after renewing the DHCP lease.
+* Client IP assignment needed to be validated before testing domain connectivity.
 
 ## Investigation
 
@@ -28,15 +28,15 @@ Verified the DHCP configuration on both the client and server before renewing th
 
 ### Client Checks
 
-- Confirmed the network adapter was set to obtain an IP address automatically.
-- Used `ipconfig /all` to review the assigned IPv4 address, gateway, and DNS server.
-- Used `ipconfig /release` followed by `ipconfig /renew` to request a new DHCP lease.
+* Confirmed the network adapter was set to obtain an IP address automatically.
+* Used `ipconfig /all` to review the assigned IPv4 address, gateway, and DNS server.
+* Used `ipconfig /release` followed by `ipconfig /renew` to request a new DHCP lease.
 
 ### Server Checks
 
-- Verified the DHCP scope was active.
-- Confirmed the address pool was configured for `10.0.2.100–10.0.2.200`.
-- Verified the DHCP server was authorized and serving the VirtualBox NAT Network.
+* Verified the DHCP scope was active.
+* Confirmed the address pool was configured for `10.0.2.100–10.0.2.200`.
+* Verified the DHCP server was authorized and serving the VirtualBox NAT Network.
 
 ## Resolution
 
@@ -59,24 +59,24 @@ Verified the DHCP configuration was working correctly by confirming:
 
 ### Initial Issue
 
-*Client network configuration before troubleshooting.*
+*The client failed to obtain a DHCP lease.*
 
 ![Initial Issue](./screenshots/initial-issue.png)
 
 ### Investigation
 
-*`ipconfig /all` and DHCP scope configuration.*
+*The DHCP scope appeared to be inactive.*
 
-![Investigation](./screenshots/initial-issue.png)
+![Investigation](./screenshots/investigation.png)
 
 ### Resolution
 
-*Successful DHCP lease renewal.*
+*The DHCP scope was reactivated and later tested.*
 
-![Resolution](./screenshots/initial-issue.png)
+![Resolution](./screenshots/resolution.png)
 
 ### Validation
 
-*Verified the assigned IP address, gateway, and DNS server after the fix.*
+*Confirmed the client successfully received a valid DHCP lease and restored network connectivity.*
 
-![Validation](./screenshots/initial-issue.png)
+![Validation](./screenshots/validation.png)
