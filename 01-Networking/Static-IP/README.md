@@ -43,12 +43,6 @@ Confirmed the static configuration using Command Prompt.
 * Successfully pinged the DNS server (`10.0.2.10`).
 * Successfully reached external connectivity by pinging `google.com`.
 
-## Outcome
-
-The Domain Controller now uses a persistent static IPv4 address, ensuring reliable communication for Active Directory, DNS, and other network services within the lab environment.
-
-## Screenshots
-
 ### Static IPv4 Configuration
 
 Configured the Windows Server network adapter with a static IPv4 address, subnet mask, default gateway, and preferred DNS server.
