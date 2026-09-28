@@ -68,15 +68,21 @@ Corrected the user's folder access by updating the appropriate Active Directory 
 
 ![Jira Ticket Overview](./screenshots/jira-ticket-overview.png)
 
+### Access Denied
+
+*Reproduced the reported issue and confirmed the user could not access the folder.*
+
+![Access Denied](./screenshots/access-denied.png)
+
 ### User Group Membership
 
-*Verified the user's membership in the Active Directory security group responsible for folder access.*
+*Reviewed the user's Active Directory group membership and identified the missing security group.*
 
 ![User Group Membership](./screenshots/user-group-membership.png)
 
 ### NTFS Permissions
 
-*Verified the appropriate security group had the required NTFS permissions on the affected folder.*
+*Verified that the appropriate security group had the required NTFS permissions on the folder.*
 
 ![NTFS Permissions](./screenshots/ntfs-permissions.png)
 
