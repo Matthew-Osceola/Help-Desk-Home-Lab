@@ -8,13 +8,14 @@ The issue was resolved by verifying the DHCP server configuration, renewing the 
 
 ## Environment
 
-* Windows Server 2022 (OK-DC-01)
-* Windows 11 Pro (Desktop01)
-* Domain: mattosceola.com
-* Oracle VirtualBox NAT Network
-* DHCP Server: 10.0.2.10
-* Scope: 10.0.2.0/24
-* Address Pool: 10.0.2.100–10.0.2.200
+* **Hypervisor:** Oracle VirtualBox
+* **Server:** Windows Server 2022 (OK-DC-01)
+* **Client:** Windows 11 Pro (Desktop01)
+* **Domain:** mattosceola.com
+* **Network:** Oracle VirtualBox NAT Network
+* **DHCP Server:** 10.0.2.10
+* **Scope:** 10.0.2.0/24
+* **Address Pool:** 10.0.2.100–10.0.2.200
 
 ## Symptoms
 
