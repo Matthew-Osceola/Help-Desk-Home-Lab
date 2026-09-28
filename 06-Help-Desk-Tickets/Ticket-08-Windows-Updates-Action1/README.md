@@ -73,28 +73,28 @@ Deployed the required Windows updates to the Windows 11 client through **Action1
 
 *Created and tracked the Windows Update request in Jira, including the issue key, request type, priority, status, and issue summary.*
 
-![](./screenshots/jira-ticket-overview.png)
+![Jira Ticket Overview](./screenshots/jira-ticket-overview.png)
 
 ### Missing Windows Updates
 
 *Verified the Windows 11 endpoint had available Windows updates requiring deployment.*
 
-![](./screenshots/missing-windows-updates.png)
+![Missing Windows Updates](./screenshots/missing-windows-updates.png)
 
 ### Action1 Update Deployment
 
 *Deployed the required Windows updates to the Windows 11 endpoint through Action1.*
 
-![](./screenshots/action1-update-deployment.png)
+![Action1 Update Deployment](./screenshots/action1-update-deployment.png)
 
 ### Update Deployment Success
 
 *Verified that the Windows updates were successfully deployed to the Windows 11 endpoint.*
 
-![](./screenshots/update-deployment-success.png)
+![Update Deployment Success](./screenshots/update-deployment-success.png)
 
 ### Successful Update Validation
 
 *Confirmed the Windows 11 endpoint was updated successfully and no longer showed the deployed updates as missing.*
 
-![](./screenshots/successful-update-validation.png)
+![Successful Update Validation](./screenshots/successful-update-validation.png)
