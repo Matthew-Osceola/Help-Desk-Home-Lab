@@ -20,7 +20,7 @@ Configured and validated a Windows Server 2022 Domain Controller using Active Di
 
 Verified that the **Active Directory Domain Services (AD DS)** role is installed and configured on the Windows Server.
 
-*AD DS role installed and configured on the Windows Server.*
+*Windows Server 2022 Server Manager confirming the successful installation of the Active Directory Domain Services (AD DS) role.*
 
 ![AD DS Installed](./screenshots/ad-ds-installed.png)
 
