@@ -33,16 +33,10 @@ Example structure:
 
 ```text
 mattosceola.com
-├── Department Users
-│   ├── Finance
-│   └── ...
-└── Groups
-    └── Department Groups
-        ├── Finance
-        ├── Human Resources
-        ├── Information Technology
-        ├── Management
-        └── Marketing
+└── Department Users
+    ├── IT
+    │   └── Matthew.Osceola
+    └── ...
 ```
 
 ### Group Membership
