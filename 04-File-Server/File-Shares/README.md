@@ -11,7 +11,7 @@ Department shares were published for group-based access, while user shares were 
 * **Hypervisor:** Oracle VirtualBox
 * **Server:** Windows Server 2022
 * **Domain Controller:** `OK-DC-01`
-* **Client:** Windows 11 Pro VM
+* **Client:** Windows 11 Pro
 * **Domain:** `mattosceola.com`
 
 ## Configuration
