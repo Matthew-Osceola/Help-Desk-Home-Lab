@@ -2,65 +2,76 @@
 
 ## Overview
 
-Configured and validated **Windows Server 2022 file shares** to provide centralized access to department and user-specific folders within an Active Directory environment.
+Configured Windows Server 2022 SMB file shares to provide centralized access to department and user-specific folders within an Active Directory environment.
 
-The shares were configured with appropriate **SMB share permissions** and tested using domain user accounts.
+Department shares were published for group-based access, while user shares were created to provide dedicated storage for individual domain users.
 
 ## Environment
 
 * **Hypervisor:** Oracle VirtualBox
 * **Server:** Windows Server 2022
-* **Client:** Windows 11 Pro
+* **Domain Controller:** `OK-DC-01`
+* **Client:** Windows 11 Pro VM
 * **Domain:** `mattosceola.com`
-* **File Server:** `OK-DC-01`
-
-## File Shares
-
-### Department Shares
-
-Created shared folders for department-level access:
-
-- Information Technology
-- Finance
-- HR
-- Marketing
-- Management
-
-Department shares provide centralized access to resources based on Active Directory group membership.
-
-### User Shares
-
-Created individual user shares to provide users with dedicated network storage.
-
-User shares were configured to restrict access to the appropriate user account.
 
 ## Configuration
 
-- Created shared folders on the Windows Server file server.
-- Configured SMB file sharing for department and user folders.
-- Applied share permissions based on the intended access level.
-- Configured NTFS permissions separately to control file-system access.
-- Used Active Directory security groups to manage department access.
+### Department Shares
+
+Created SMB shares for department resources.
+
+* Information Technology
+* Finance
+* Human Resources
+* Marketing
+* Management
+
+These shares were designed to work with Active Directory security groups for centralized access management.
+
+### User Shares
+
+Created individual SMB shares to provide each user with dedicated network storage.
+
+User shares were configured to support user-specific access through Active Directory.
+
+### Share Configuration
+
+* Created shared folders on the Windows Server file server.
+* Enabled SMB sharing for department and user folders.
+* Configured share permissions for the intended access level.
+* Used Active Directory security groups to support department-based access management.
+
+> **Note:** NTFS permission configuration is documented separately in the **NTFS Permissions** README.
 
 ## Validation
 
-- Verified department shares were accessible from the Windows 11 client.
-- Verified user shares were accessible from the Windows 11 client.
-- Tested access using domain user accounts.
-- Showed that the shared folders are being shared from the domain controller
+Verified that the file shares functioned correctly from the Windows 11 client.
+
+* Confirmed department shares were accessible.
+* Confirmed user shares were accessible.
+* Tested access using domain user accounts.
+* Verified the shares were published from `OK-DC-01`.
 
 ### Department Shares
+
+*Server showing the configured department SMB shares.*
 
 ![Department Shares](./screenshots/department-shares.png)
 
 ### User Shares
 
+*Server showing the configured user SMB shares.*
+
 ![User Shares](./screenshots/user-shares.png)
 
 ### Shared Folders
 
+*Windows Server displaying the published SMB shares through Shared Folders.*
+
 ![Shared Folders](./screenshots/shared-folders.png)
 
 ### File Explorer Access
+
+*Windows 11 client accessing shared folders from `OK-DC-01`.*
 
 ![File Explorer Access](./screenshots/file-explorer-access.png)
