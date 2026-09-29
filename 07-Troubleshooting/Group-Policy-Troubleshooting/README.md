@@ -84,4 +84,6 @@ Verified the issue was resolved by confirming:
 
 *Changed the ScreenSaveTimeOut value to 10 from 900 to test that the GPO works as intended.*
 
-![Video Validation](./videos/video-validation.mp4)
+https://github.com/user-attachments/assets/6c78744e-c11b-44d3-ac70-ce4556812184
+
+
