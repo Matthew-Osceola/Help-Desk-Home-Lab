@@ -10,7 +10,7 @@ Created and configured Active Directory user accounts within the `mattosceola.co
 * **Server:** Windows Server 2022
 * **Domain Controller:** `OK-DC-01`
 * **Domain:** `mattosceola.com`
-* **Client:** Windows 11 VM
+* **Client:** Windows 11 Pro
 * **Directory Service:** Active Directory Domain Services (AD DS)
 
 ## Configuration
