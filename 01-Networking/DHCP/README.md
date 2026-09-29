@@ -11,7 +11,7 @@ Configured and validated DHCP on Windows Server 2022 within the `mattosceola.com
 * **Domain Controller:** `OK-DC-01`
 * **Domain:** `mattosceola.com`
 * **DHCP Server:** `10.0.2.10`
-* **Client:** Windows 11 VM
+* **Client:** Windows 11 Pro
 * **Network:** `10.0.2.0/24`
 
 ## Configuration
