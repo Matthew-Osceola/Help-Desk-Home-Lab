@@ -45,24 +45,24 @@ Confirmed the static configuration using Command Prompt.
 
 ### Static IPv4 Configuration
 
-Configured the Windows Server network adapter with a static IPv4 address, subnet mask, default gateway, and preferred DNS server.
+*Configured the Windows Server network adapter with a static IPv4 address, subnet mask, default gateway, and preferred DNS server.*
 
 ![Static IPv4 Configuration](./screenshots/static-ipv4-configuration.png)
 
 ### IP Configuration Validation
 
-Verified the static network configuration using `ipconfig /all`.
+*Verified the static network configuration using `ipconfig /all`.*
 
 ![IP Configuration Validation](./screenshots/static-ipconfig-all.png)
 
 ### DNS Server Connectivity
 
-Verified connectivity to the configured DNS server using `ping 10.0.2.10`.
+*Verified connectivity to the configured DNS server using `ping 10.0.2.10`.*
 
 ![DNS Server Ping](./screenshots/static-ping-dns-server.png)
 
 ### Internet Connectivity
 
-Verified external network connectivity using `ping google.com`.
+*Verified external network connectivity using `ping google.com`.*
 
 ![Internet Connectivity](./screenshots/static-ping-google.png)
