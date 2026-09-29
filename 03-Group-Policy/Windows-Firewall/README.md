@@ -10,7 +10,7 @@ Configured Windows Defender Firewall settings through Group Policy to establish 
 - **Server:** Windows Server 2022
 - **Domain Controller:** `OK-DC-01`
 - **Domain:** `mattosceola.com`
-- **Client:** Windows 11 Pro VM
+- **Client:** Windows 11 Pro
 - **Management Tool:** Group Policy Management
 
 ## Configuration
