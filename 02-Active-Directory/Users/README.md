@@ -2,9 +2,9 @@
 
 ## Overview
 
-Created and configured Active Directory user accounts within the `mattosceola.com` domain. User accounts were organized within dedicated OUs and associated with appropriate security groups to support centralized account management and access control.
+Created and configured Active Directory user accounts within the `mattosceola.com` domain. User accounts were organized within dedicated OUs and assigned to appropriate security groups to support centralized account management and access control.
 
-### Environment
+## Environment
 
 * **Hypervisor:** Oracle VirtualBox
 * **Server:** Windows Server 2022
@@ -64,23 +64,31 @@ This follows the **AGDLP (Accounts → Global Groups → Domain Local Groups →
 Validated user account functionality by:
 
 * Signing into the Windows 11 client using a domain account
-* Confirming the account authenticated against the `mattosceola.com` domain
+* Confirming authentication against the `mattosceola.com` domain
 * Verifying the user's OU placement in Active Directory Users and Computers
 * Verifying group membership
-* Confirming the user's access to assigned resources
+* Confirming access to assigned resources
 
 ### User Accounts
+
+*Active Directory Users and Computers displaying the configured domain user accounts within their organizational units.*
 
 ![Active Directory Users](./screenshots/users.png)
 
 ### User Properties
 
+*User account properties showing the configured account information and Active Directory settings.*
+
 ![User Properties](./screenshots/user-properties.png)
 
 ### Group Membership
 
+*User account membership showing the security groups assigned to the user.*
+
 ![Group Membership](./screenshots/group-membership.png)
 
 ### Domain Authentication
+
+*Windows 11 client showing authentication using a domain account.*
 
 ![Domain User Login](./screenshots/domain-login.png)
