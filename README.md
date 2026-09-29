@@ -28,7 +28,7 @@ Configured a Windows Server 2022 virtual machine and Windows 11 Pro virtual mach
 ### Active Directory & Group Policy
 
 * Created and managed Active Directory users, security groups, and organizational units.
-* Configured Group Policy for password policies, account lockout, workstation security, and other security settings.
+* Configured Group Policy for password policies, account lockout, screen inactivity, and other security settings.
 
 ### File Services & Permissions
 
