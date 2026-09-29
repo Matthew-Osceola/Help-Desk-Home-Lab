@@ -2,45 +2,44 @@
 
 ## Overview
 
-Configured a VirtualBox NAT Network to allow Windows Server 2022 and a Windows 11 client to communicate on the same private network while providing internet access. This isolated the lab environment from the home network and allowed Windows Server DHCP and DNS services to manage client networking.
+Configured a VirtualBox NAT Network to allow Windows Server 2022 and a Windows 11 client to communicate on the same private network while maintaining internet access. The NAT Network isolates the lab environment from the home network and allows Windows Server DHCP and DNS services to manage client networking.
 
-### Environment
+## Environment
 
 * **Hypervisor:** Oracle VirtualBox
 * **Network Mode:** NAT Network
-* **Server:** Windows Server 2022 (`OK-DC-01`)
-* **Client:** Windows 11
+* **Server:** Windows Server 2022
+* **Domain Controller:** `OK-DC-01`
+* **Client:** Windows 11 VM
 * **Domain:** `mattosceola.com`
 * **Server IP:** `10.0.2.10`
 * **Gateway:** `10.0.2.1`
 * **Subnet:** `10.0.2.0/24`
 
----
-
 ## Configuration
 
-### Step 1: Create a NAT Network
+### NAT Network
 
-Created a VirtualBox NAT Network to provide an isolated virtual network with internet access for both virtual machines.
+Created a VirtualBox NAT Network to provide an isolated virtual network with internet access for the lab virtual machines.
 
-![Internet Connectivity](./screenshots/nat-network-settings.png)
+*VirtualBox NAT Network configured for the Windows Server and Windows 11 virtual machines.*
 
----
+![NAT Network Settings](./screenshots/nat-network-settings.png)
 
-### Step 2: Configure VM Network Adapters
+### Virtual Machine Network Adapters
 
-Configured both virtual machines to use the same NAT Network.
+Configured both virtual machines to use the same VirtualBox NAT Network.
 
 * Windows Server 2022
 * Windows 11 Client
 
-![Internet Connectivity](./screenshots/nat-vm-network-adapter.png)
+*Virtual machine network adapters configured to use the same NAT Network.*
 
----
+![NAT VM Network Adapters](./screenshots/nat-vm-network-adapter.png)
 
-### Step 3: Verify Server Network Configuration
+### Server Network Configuration
 
-Confirmed the server was using the correct static IP configuration.
+Configured the Windows Server with a static IPv4 address for use as the Domain Controller, DNS server, and DHCP server.
 
 Expected values:
 
@@ -48,35 +47,38 @@ Expected values:
 * Subnet Mask: `255.255.255.0`
 * Default Gateway: `10.0.2.1`
 
-![Internet Connectivity](./screenshots/nat-server-ipconfig.png)
+*Windows Server network configuration showing the assigned static IPv4 address, subnet mask, and default gateway.*
 
----
+![Server IP Configuration](./screenshots/nat-server-ipconfig.png)
 
 ## Validation
 
-### Client Received Network Configuration
-
-Verified the Windows 11 client received network settings and could communicate with the server.
+Validated the NAT Network configuration by confirming the Windows 11 client received appropriate network settings and could communicate with the Domain Controller.
 
 Validation included:
 
-* Correct IP assignment
-* Default gateway present
-* DNS configured
-* Successful communication with the domain controller
+* Correct IP address assignment
+* Default gateway configuration
+* DNS configuration
+* Communication with the Domain Controller
+* Internet connectivity
 
-![Internet Connectivity](./screenshots/nat-client-ipconfig.png)
+### Client Network Configuration
 
----
+*Windows 11 client displaying its assigned network configuration and DNS settings.*
 
-### Internet Connectivity
+![Client IP Configuration](./screenshots/nat-client-ipconfig.png)
 
-Confirmed both virtual machines had internet access through the VirtualBox NAT Network.
+### Network Connectivity
 
-Validation examples:
+Confirmed network and internet connectivity between the virtual machines and external resources.
+
+Validation included:
 
 * Successful web access
 * Successful ping tests
 * Windows Update connectivity
 
-![Internet Connectivity](./screenshots/nat-connectivity.png)
+*Windows Server and Windows 11 client demonstrating successful network and internet connectivity.*
+
+![Network Connectivity](./screenshots/nat-connectivity.png)
