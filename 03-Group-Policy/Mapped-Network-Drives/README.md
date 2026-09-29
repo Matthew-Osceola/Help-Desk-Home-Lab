@@ -10,7 +10,7 @@ Configured Group Policy Preferences to automatically map department and personal
 - **Server:** Windows Server 2022
 - **Domain Controller:** `OK-DC-01`
 - **Domain:** `mattosceola.com`
-- **Client:** Windows 11 Pro VM
+- **Client:** Windows 11 Pro
 - **Management Tool:** Group Policy Management
 
 ## Configuration
