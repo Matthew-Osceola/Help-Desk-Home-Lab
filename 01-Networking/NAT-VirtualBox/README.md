@@ -10,7 +10,7 @@ Configured a VirtualBox NAT Network to allow Windows Server 2022 and a Windows 1
 * **Network Mode:** NAT Network
 * **Server:** Windows Server 2022
 * **Domain Controller:** `OK-DC-01`
-* **Client:** Windows 11 VM
+* **Client:** Windows 11 Pro
 * **Domain:** `mattosceola.com`
 * **Server IP:** `10.0.2.10`
 * **Gateway:** `10.0.2.1`
