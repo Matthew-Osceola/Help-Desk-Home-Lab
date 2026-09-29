@@ -4,73 +4,90 @@
 
 Configured and validated **NTFS permissions** in a Windows Server 2022 Active Directory environment to control access to department and personal folders.
 
-Permissions were assigned using **AGDLP (Accounts → Global Groups → Domain Local Groups → Permissions)**, allowing access to be managed through Active Directory groups instead of assigning permissions directly to individual users.
+Department access was managed through **AGDLP (Accounts → Global Groups → Domain Local Groups → Permissions)**, allowing permissions to be assigned through Active Directory security groups instead of individual users.
 
 ## Environment
 
 * **Hypervisor:** Oracle VirtualBox
 * **Server:** Windows Server 2022
-* **Client:** Windows 11 Pro
+* **Domain Controller:** `OK-DC-01`
+* **Client:** Windows 11 Pro VM
 * **Domain:** `mattosceola.com`
-* **File Server:** `OK-DC-01`
 
 ## Configuration
 
 ### Department Folder Permissions
 
-Configured department folders to grant access through **Domain Local security groups** instead of individual user accounts.
+Configured department folders to grant access through **Domain Local security groups** rather than individual user accounts.
 
 Examples include:
 
-- `DL-Finance-Modify`
-- `DL-Finance-Read`
-- Department-specific Modify and Read groups
+* `DL-Finance-Modify`
+* `DL-Finance-Read`
+* `DL-Human-Resources-Modify`
+* `DL-Human-Resources-Read`
+* `DL-Information-Technology-Modify`
+* `DL-Information-Technology-Read`
+* `DL-Marketing-Modify`
+* `DL-Marketing-Read`
+* `DL-Management-Modify`
+* `DL-Management-Read`
 
-Each folder inherited permissions from the parent where appropriate while retaining department-specific access.
+Configured appropriate Read and Modify permissions for each department folder.
 
 ### Personal Folder Permissions
 
-Configured personal user folders so each user could access only their own folder.
+Configured personal user folders to restrict access to the assigned user while retaining administrator access for management.
 
-Permissions were assigned through Active Directory group membership, preventing unauthorized access from other users while allowing administrators to retain management access.
+Each personal folder was tested to verify that the assigned user could access the folder while other users were denied access.
 
 ### AGDLP Implementation
 
-Implemented the AGDLP permission model by assigning:
+Applied the AGDLP permission model to department resources:
 
-- Users to **Global Groups**
-- Global Groups to **Domain Local Groups**
-- Domain Local Groups to NTFS permissions
+* Users assigned to **Global Groups**
+* Global Groups assigned to **Domain Local Groups**
+* Domain Local Groups assigned to **NTFS permissions**
 
-This approach simplifies permission management by allowing future access changes through group membership rather than modifying folder permissions individually.
+This approach separates user membership from resource permissions and allows access changes to be managed through group membership.
 
 ## Validation
 
 Verified the NTFS permission configuration by:
 
-- Confirming department groups were assigned to the correct folders.
-- Testing access with users from different departments.
-- Verifying authorized users could open permitted folders.
-- Confirming unauthorized users were denied access.
-- Verifying personal folders were accessible only to their assigned users.
-- Confirming administrators retained management access.
+* Confirming department groups were assigned to the appropriate folders.
+* Testing access with users from different departments.
+* Verifying authorized users could access permitted folders.
+* Confirming unauthorized users were denied access.
+* Verifying personal folders were accessible only to their assigned users.
+* Confirming administrators retained management access.
 
 ### Department Folder Security
+
+*NTFS Security settings showing the configured permissions for a department folder.*
 
 ![Department Folder Security](./screenshots/department-folder-security.png)
 
 ### Personal Folder Security
 
+*NTFS Security settings showing the configured permissions for a personal user folder.*
+
 ![Personal Folder Security](./screenshots/personal-folder-security.png)
 
 ### IT User Access
+
+*Windows 11 client accessing a department folder with the user's assigned permissions.*
 
 ![IT User Access](./screenshots/it-user-access.png)
 
 ### Unauthorized Access Test
 
+*Access attempt showing that a user without the required permissions was denied access to the folder.*
+
 ![Unauthorized Access Test](./screenshots/unauthorized-access-test.png)
 
 ### Personal Folder Access
+
+Windows 11 client accessing the user's assigned personal folder.
 
 ![Personal Folder Access](./screenshots/personal-folder-access.png)
