@@ -1,4 +1,4 @@
-# Help Desk Homelab
+# Help Desk Home Lab
 
 ## Objective
 
