@@ -82,6 +82,6 @@ Verified the issue was resolved by confirming:
 
 ### Video Validation
 
-*Changed the ScreenSaveTimeOut value to 10 from 900 to show that the fix works.*
+*Changed the ScreenSaveTimeOut value to 10 from 900 to test that the GPO works as intended.*
 
-![Video Validation](./videos/video-validation.png)
+![Video Validation](./videos/video-validation.mp4)
