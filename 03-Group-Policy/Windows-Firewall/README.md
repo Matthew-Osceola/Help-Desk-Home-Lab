@@ -2,22 +2,22 @@
 
 ## Overview
 
-Configured Windows Firewall settings through Group Policy to create a consistent security baseline for domain-joined computers in a simulated Windows Server 2022 help desk environment. This project demonstrates centralized firewall management using Active Directory instead of configuring each workstation individually.
+Configured Windows Defender Firewall settings through Group Policy to establish a consistent security baseline for domain-joined computers in a simulated Windows Server 2022 help desk environment. This project demonstrates centralized firewall management using Active Directory instead of configuring individual workstations manually.
 
 ## Environment
 
-* **Hypervisor:** Oracle VirtualBox
-* **Server:** Windows Server 2022
-* **Domain Controller:** `OK-DC-01`
-* **Domain:** `mattosceola.com`
-* **Client:** Windows 11 Pro VM
-* **Management Tool:** Group Policy Management
+- **Hypervisor:** Oracle VirtualBox
+- **Server:** Windows Server 2022
+- **Domain Controller:** `OK-DC-01`
+- **Domain:** `mattosceola.com`
+- **Client:** Windows 11 Pro VM
+- **Management Tool:** Group Policy Management
 
 ## Configuration
 
 ### Firewall Group Policy
 
-Configured Windows Firewall settings in the **GPO-Windows-Firewall** Group Policy Object.
+Configured Windows Defender Firewall settings in the **GPO-Windows-Firewall** Group Policy Object.
 
 **Configured settings:**
 
@@ -37,7 +37,9 @@ Configured Windows Defender Firewall logging for the Domain Profile to support t
 
 ### Policy Deployment
 
-Linked the GPO to the appropriate Organizational Unit so domain computers receive the firewall configuration automatically during Group Policy updates.
+- Linked **GPO-Windows-Firewall** to the appropriate Organizational Unit.
+- Updated Group Policy on the client with `gpupdate /force`.
+- Verified that the firewall configuration was applied to the domain-joined workstation.
 
 ## Validation
 
@@ -48,14 +50,20 @@ Verified that the firewall policy was successfully applied to the Windows 11 cli
 - Confirmed the Domain network profile was active.
 - Verified Domain Profile logging settings were configured.
 
-### Firewall with Logging Group Policy
+### Domain Firewall Policy
+
+*Group Policy showing the configured Windows Defender Firewall and Domain Profile logging settings.*
 
 ![Firewall Group Policy](./screenshots/firewall-gpo.png)
 
 ### Firewall Enabled
 
+*Windows Defender Firewall enabled on the Windows 11 client using the Domain Profile.*
+
 ![Firewall Enabled](./screenshots/firewall-enabled.png)
 
 ### Group Policy Results
+
+*`gpresult` confirming that **GPO-Windows-Firewall** was successfully applied to the client.*
 
 ![Group Policy Results](./screenshots/gp-result.png)
