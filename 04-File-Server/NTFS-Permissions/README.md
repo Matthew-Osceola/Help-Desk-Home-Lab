@@ -11,7 +11,7 @@ Department access was managed through **AGDLP (Accounts → Global Groups → Do
 * **Hypervisor:** Oracle VirtualBox
 * **Server:** Windows Server 2022
 * **Domain Controller:** `OK-DC-01`
-* **Client:** Windows 11 Pro VM
+* **Client:** Windows 11 Pro
 * **Domain:** `mattosceola.com`
 
 ## Configuration
