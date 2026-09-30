@@ -58,7 +58,7 @@ Detailed configuration, troubleshooting, validation, and screenshots are organiz
 
 | Project                                   | Topic                                                       |
 | ----------------------------------------- | ----------------------------------------------------------- |
-| [Networking](01-Networking)               | Static IP, NAT Network, DNS, and DHCP.                      |
+| [Networking](01-Network)                  | Static IP, NAT Network, DNS, and DHCP.                      |
 | [Active Directory](02-Active-Directory)   | Domain Controller, users, groups, and organizational units. |
 | [Group Policy](03-Group-Policy)           | Security policies and workstation configuration.            |
 | [File Server](04-File-Server)             | File shares, NTFS permissions, and network drives.          |
