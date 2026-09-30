@@ -10,7 +10,7 @@ Each project includes configuration steps, validation, and screenshots demonstra
 
 | Project                                 | Description                                                                                                                       |
 | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **[NAT Network](./NAT-VirtualBox/)** | Configured a VirtualBox NAT Network to provide isolated connectivity between Windows Server 2022 and Windows 11 virtual machines. |
+| **[NAT Network](./NAT-VirtualBox/)**    | Configured a VirtualBox NAT Network to provide isolated connectivity between Windows Server 2022 and Windows 11 virtual machines. |
 | **[Static IP](./Static-IP/)**           | Configured a static IPv4 address for the domain controller and validated client connectivity.                                     |
 | **[DNS](./DNS/)**                       | Configured and validated DNS functionality within an Active Directory environment.                                                |
 | **[DHCP](./DHCP/)**                     | Configured and validated DHCP to automatically assign IP addresses to domain clients.                                             |
