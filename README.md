@@ -16,6 +16,11 @@ Configured a Windows Server 2022 virtual machine and Windows 11 Pro virtual mach
 * Jira
 * Action1
 
+## Architecture
+
+<img width="497" height="570" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/d7eb07d0-8cc2-47f9-9227-7b49225cd27c" />
+
+
 ## Tasks Performed
 
 ### Infrastructure & Networking
